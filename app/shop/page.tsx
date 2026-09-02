@@ -1,0 +1,5 @@
+import Link from 'next/link';
+
+export default function Shop() {
+  return <main className="shell"><nav className="nav"><Link className="brand" href="/">Tech<span>Kart</span></Link><Link className="btn secondary" href="/dashboard">Merchant view</Link></nav><section className="hero" style={{paddingTop:60}}><div className="eyebrow">RazorMind buyer experience</div><h1>Build your <span>gaming setup.</span></h1><p>RazorMind has identified a relevant bundle for this shopper based on their cart and buying patterns.</p><div className="card" style={{maxWidth:700}}><h2>Mechanical Keyboard + Gaming Mouse</h2><p className="muted">Two products. One optimized bundle. Save 10% when you buy together.</p><h2>₹2,499 <del style={{color:'#7d8795',fontSize:16}}>₹2,777</del></h2><Link className="run" href="/checkout">Buy bundle with Razorpay →</Link></div></section></main>;
+}
